@@ -10,6 +10,7 @@
  */
 
 
+
 /**
  * Register the "Jobs" custom post type
  */
@@ -75,7 +76,6 @@ add_action('admin_menu', 'loginjobs_add_settings_page');
 function loginjobs_render_plugin_settings_page()
 {
 ?>
-    <h2>Jobs Settings Page</h2>
     <form action="options.php" method="post">
         <?php
         settings_fields('loginjobs_jobs_options_group');
@@ -118,5 +118,5 @@ function loginjobs_plugin_setting_close_duration()
 
 function loginjobs_plugin_section_text()
 {
-    echo '<p>Here you can set all the options</p>';
+    echo '<p>Here you can set all the options that related to posted jobs</p>';
 }
